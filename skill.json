@@ -1,0 +1,38 @@
+{
+  "name": "genpark-agentic-commerce-customs-cbp-section-301-china-tariff-exclusion-skill",
+  "version": "1.0.0",
+  "description": "US Customs Section 301 China punitive tariff exclusions, Chapter 99 secondary HTS classification & refund recovery.",
+  "category": "agentic_commerce",
+  "author": "GenPark AI",
+  "website": "https://www.genpark.ai",
+  "linkedin": "https://www.linkedin.com/company/92955550",
+  "main": "skills.py",
+  "tools": [
+    {
+      "name": "audit_section301_tariff_exclusion",
+      "description": "US Customs Section 301 China punitive tariff exclusions, Chapter 99 secondary HTS classification & refund recovery.",
+      "sample_input": {
+        "import_entries": [
+          {
+            "entry_number": "CBP-01",
+            "primary_hts": "8414.90.4175",
+            "customs_value_usd": 68000.0,
+            "section_301_duty_paid_usd": 17000.0
+          },
+          {
+            "entry_number": "CBP-02",
+            "primary_hts": "8504.40.9580",
+            "customs_value_usd": 42000.0,
+            "section_301_duty_paid_usd": 10500.0
+          },
+          {
+            "entry_number": "CBP-03",
+            "primary_hts": "7318.15.2000",
+            "customs_value_usd": 15000.0,
+            "section_301_duty_paid_usd": 3750.0
+          }
+        ]
+      }
+    }
+  ]
+}
